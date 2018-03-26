@@ -20,7 +20,4 @@ angular.module('try').controller('appController', function($http,$location,$rout
 				$location.path('dev/:' + id);
 			}
 
-})angular.module('try').controller('appController', function($scope){
-
-
 })
