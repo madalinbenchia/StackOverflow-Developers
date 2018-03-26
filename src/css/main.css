@@ -1,0 +1,90 @@
+html {
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+header {
+	width:100%;
+	position:relative;
+	margin:2vw auto;
+	text-align:center;
+}
+
+header h1 {
+	font-size:32px;
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	width:100%;
+}
+
+.container {
+	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+	margin-top:3vw;
+}
+
+.content {
+	width:100%;
+	display:block;
+	position:relative;
+	margin:50px auto;
+}
+
+.developer {
+
+	width:29%;
+	position:relative;
+	text-align:center;
+	padding:10px;
+	background-color:#fff;
+	display:inline-block;
+	margin:0 1.3vw;
+	-moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    border-radius:2%;
+    margin-top:2vw;
+}
+
+.developer:after {
+
+	content: '';
+    position: absolute;
+    z-index: -1; 
+    -webkit-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);
+    box-shadow: 0 15px 20px rgba(0, 0, 0, 0.3);                
+    width: 70%; 
+    left: 15%; 
+    height: 100px;
+    bottom: 0;
+
+}
+
+.profileImage img {
+
+	width:80%;
+	border-radius:50%;
+	padding-bottom:1vw;
+}
+
+.developer:hover .seeResult{
+	display:flex;
+	background:black;
+	cursor:pointer;
+	align-items:center;
+}
+
+.seeResult {
+
+	display:none;
+	position:absolute;
+	top:0;
+	left:0;
+	right:0;
+	bottom:0;
+	opacity:0.6;
+	border-radius:2%;
+}
+
+.seeResult img {
+
+	width:15%;
+	margin:0 auto;
+}

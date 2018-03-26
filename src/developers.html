@@ -1,0 +1,19 @@
+<ul class="container">
+	
+	<li ng-click=showDetails(item.id) class="developer" ng-repeat='item in posts'>
+		
+		<section class="profileImage">
+			<img ng-src={{item.path}} />
+		</section>
+		
+		<section class="details">
+			<h5 ng-model='name'>{{item.name}}</h5>
+		</section>
+		
+		<section class="seeResult"> 
+			<img src="img/icons/search.png"  />
+		 </section>
+	
+	</li>	
+
+</ul>
