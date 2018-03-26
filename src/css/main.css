@@ -88,3 +88,74 @@ header h1 {
 	width:15%;
 	margin:0 auto;
 }
+.leftContent {
+	width: 30%;
+	background-color:#fff;
+	height:300px;
+	float:left;
+	text-align:center;
+}
+
+.leftContent img {
+	height:100%;
+	width:100%;
+	border-radius:2%;
+}
+
+.rightContent {
+	width:70%;
+	float:left;
+	padding-left:60px;
+	height:100%;
+}
+
+.location {
+	margin-top:20px;
+}
+
+.location p {
+	padding-top:6px;
+}
+
+.location::before{
+
+	content: url('../img/icons/location.png');
+	float:left;
+}
+
+.achievements ul {
+
+	list-style:none;
+	padding:0px;
+}
+
+.achievements ul li {
+	margin: 20px 0;
+}
+
+.achievements ul li:nth-child(1):before {
+
+	content: url('../img/icons/bronze.png');
+	float:left;
+}
+.achievements ul li:nth-child(2):before {
+
+	content: url('../img/icons/silver.png');
+	float:left;
+}
+.achievements ul li:nth-child(3):before {
+
+	content: url('../img/icons/gold.png');
+	float:left;
+}
+
+.label {
+	display:flex;
+	margin:100px auto;
+	-moz-box-shadow: 1px 2px 4px rgba(0, 0, 0,0.5);
+    -webkit-box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
+    border-radius:2%;
+    height:100%;
+    width:50%;
+}
