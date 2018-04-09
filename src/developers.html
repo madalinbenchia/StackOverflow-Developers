@@ -1,6 +1,7 @@
+
 <ul class="container">
 	
-	<li ng-click=showDetails(item.user_id) class="developer" ng-repeat='item in posts'>
+	<li ng-click=showDetails(item.user_id) class="developer" ng-repeat='item in posts | filter: filter'>
 		
 		<section class="profileImage">
 			<img ng-src={{item.profile_image}} />

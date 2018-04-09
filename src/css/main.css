@@ -1,5 +1,8 @@
-html {
+html,body {
 	font-family:"Palatino Linotype", "Book Antiqua", Palatino, serif;
+}
+body {
+	width:90%;
 }
 header {
 	width:100%;
@@ -158,4 +161,40 @@ header h1 {
     border-radius:2%;
     height:100%;
     width:50%;
+}
+
+.filters {
+    width: 350px;
+    border-radius: 3px;
+    overflow: hidden;
+    margin:0 auto;
+}
+
+.filters select {
+    padding: 5px 8px;
+    border: none;
+    box-shadow: none;
+    background: transparent;
+    background-image: none;
+    -webkit-appearance: none;
+}
+
+.filters select:focus {
+    outline: none;
+}
+
+.filters input {
+	 width: 60%;
+      height: 25px;
+      margin: 0 auto;
+      margin-top:10px;
+      border: none;
+      border:solid 1px #ccc;
+      border-radius: 10px;
+}
+
+.subtitle {
+
+	font-size: 16px;
+	margin:0;
 }

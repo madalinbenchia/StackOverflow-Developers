@@ -6,6 +6,13 @@ angular.module('try').controller('appController', function($http,$location,$rout
 				$scope.notFound = true;
 				var localItems  = response.data;
 				$scope.posts = localItems.items;
+
+				$scope.filter = {$: undefined};
+
+				$scope.setFilter = function() {
+					$scope.filter = {};
+					$scope.filter[$scope.selectedPropertyOption || '$'] = $scope.searchText;
+				};
 			}
 
 			function errorCallBack(response, status, config, statusText) {
