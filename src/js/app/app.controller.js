@@ -4,8 +4,8 @@ angular.module('try').controller('appController', function($http,$location,$rout
 
 			function successCallBack(response, status, config, statusText) {
 				$scope.notFound = true;
-				var items  = response.data;
-				$scope.posts = items;
+				var localItems  = response.data;
+				$scope.posts = localItems.items;
 			}
 
 			function errorCallBack(response, status, config, statusText) {

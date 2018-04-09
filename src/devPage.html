@@ -1,11 +1,11 @@
 			<section class="label">	
 
 			<section class="leftContent">
-				<img ng-src = {{developer.path}} />
+				<img ng-src = {{developer.profile_image}} />
 			</section>
 
 			<section class="rightContent">
-				<h2>{{developer.name}}</h2>
+				<h2>{{developer.display_name}}</h2>
 				
 				<section class="location">
 					<p>{{developer.location}}</p>		
@@ -14,9 +14,9 @@
 				<section class="achievements">
 					<h4> Achievements</h4>
 					<ul>
-						<li>Bronze: {{developer.bronze}}</li>
-						<li>Silver: {{developer.silver}}</li>
-						<li>Gold: {{developer.gold}}</li>
+						<li>Bronze: {{developer.badge_counts.bronze}}</li>
+						<li>Silver: {{developer.badge_counts.silver}}</li>
+						<li>Gold: {{developer.badge_counts.gold}}</li>
 					
 					</ul>
 				

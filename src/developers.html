@@ -1,13 +1,13 @@
 <ul class="container">
 	
-	<li ng-click=showDetails(item.id) class="developer" ng-repeat='item in posts'>
+	<li ng-click=showDetails(item.user_id) class="developer" ng-repeat='item in posts'>
 		
 		<section class="profileImage">
-			<img ng-src={{item.path}} />
+			<img ng-src={{item.profile_image}} />
 		</section>
 		
 		<section class="details">
-			<h5 ng-model='name'>{{item.name}}</h5>
+			<h5 ng-model='name'>{{item.display_name}}</h5>
 		</section>
 		
 		<section class="seeResult"> 
